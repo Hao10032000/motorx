@@ -1,0 +1,157 @@
+@media only screen and (max-width: 1440px) {
+    .inner-container {
+        padding: 0 0px;
+    }
+
+    .footer-main {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .shape-left {
+        display: none;
+    }
+
+    .shape-right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .footer-bottom .bottom-bar-menu {
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .footer-bottom ul.social-icon {
+        justify-content: flex-end;
+    }
+
+    .side-blog .pl-30 {
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-header .main-menu .navigation>li {
+        margin-right: 40px;
+    }
+
+    .flat-bt-top {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-outer {
+        display: none;
+    }
+
+    .header-account {
+        display: none;
+    }
+
+    .main-header {
+        padding: 28px 0;
+    }
+
+    .mobile-button {
+        display: block;
+    }
+
+    .footer-top {
+        text-align: center;
+
+        & .pd-r80 {
+            padding-right: 15px !important;
+        }
+
+        & .icon-ft {
+            display: none;
+        }
+
+        & .t-al-right {
+            text-align: center;
+        }
+    }
+
+    .footer-main {
+        & .widget-info p {
+            margin-right: 0px;
+        }
+
+        & .widget {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .widget-menu {
+        &.pl-60 {
+            padding-left: 0px !important;
+        }
+
+        &.pl-30 {
+            padding-left: 0px !important;
+        }
+    }
+
+    .flat-blog-list .side-blog {
+        margin-top: 60px;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom ul.social-icon {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .tf-page-title .page-title {
+        padding: 100px 0;
+    }
+
+    .tf-page-title .page-title .main-title {
+        font-size: 45px;
+    }
+
+    .w-671 {
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    .post-wrap .imgae-list {
+        padding-left: 15px !important;
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .tags-box .flex {
+        flex-wrap: wrap;
+    }
+
+    .comment-list ol li.flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comment-list ol li .images {
+        margin-right: 0px;
+    }
+
+    .tf-page-title .page-title {
+        animation: shrink 0s infinite alternate;
+        background-attachment: fixed;
+    }
+}
