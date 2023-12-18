@@ -267,34 +267,34 @@
   //   });
   // });
 
-  $(document).ready(function () {
-    $('.noUi-handle').on('click', function () {
-      $(this).width(50);
-    });
-    var rangeSlider = document.getElementById('slider-range');
-    var moneyFormat = wNumb({
-      decimals: 0,
-      thousand: ',',
-      prefix: '$'
-    });
-    noUiSlider.create(rangeSlider, {
-      start: [0, 5800],
-      step: 1,
-      range: {
-        'min': [0],
-        'max': [6000]
-      },
-      format: moneyFormat,
-      connect: true
-    });
-    // Set visual min and max values and also update value hidden form inputs
-    rangeSlider.noUiSlider.on('update', function (values, handle) {
-      document.getElementById('slider-range-value1').innerHTML = values[0];
-      document.getElementById('slider-range-value2').innerHTML = values[1];
-      document.getElementsByName('min-value').value = moneyFormat.from(values[0]);
-      document.getElementsByName('max-value').value = moneyFormat.from(values[1]);
-    });
-  });
+  // $(document).ready(function () {
+  //   $('.noUi-handle').on('click', function () {
+  //     $(this).width(50);
+  //   });
+  //   var rangeSlider = document.getElementById('slider-range');
+  //   var moneyFormat = wNumb({
+  //     decimals: 0,
+  //     thousand: ',',
+  //     prefix: '$'
+  //   });
+  //   noUiSlider.create(rangeSlider, {
+  //     start: [0, 5800],
+  //     step: 1,
+  //     range: {
+  //       'min': [0],
+  //       'max': [6000]
+  //     },
+  //     format: moneyFormat,
+  //     connect: true
+  //   });
+  //   // Set visual min and max values and also update value hidden form inputs
+  //   rangeSlider.noUiSlider.on('update', function (values, handle) {
+  //     document.getElementById('slider-range-value1').innerHTML = values[0];
+  //     document.getElementById('slider-range-value2').innerHTML = values[1];
+  //     document.getElementsByName('min-value').value = moneyFormat.from(values[0]);
+  //     document.getElementsByName('max-value').value = moneyFormat.from(values[1]);
+  //   });
+  // });
 
   //Counter Number
   var detectViewport = function () {
@@ -324,6 +324,29 @@
     });
   };//Counter Number// 
 
+  var hoverThumbGallery = function (e) {        
+    e.find('.hover-listing-image').each(function () { 
+        $(this).find('.listing-item:first-child').addClass('active');
+        $(this).find('.bl-item:first-child').addClass('active');
+        $(".hover-listing-image .listing-item").hover(
+            function () {
+              var index = $(this).index();
+              $(this).closest('.hover-listing-image').find('.listing-item').removeClass('active');
+              $(this).addClass("active");
+              $(this).closest('.hover-listing-image').find('.bl-item').removeClass('active');
+              $(this).closest('.hover-listing-image').find('.bl-item').eq(index).addClass('active');
+            },
+            function () {
+              $(this).removeClass("active");
+              $(this).closest('.hover-listing-image').find('.bl-item').removeClass('active');
+              $(this).closest('.hover-listing-image').find('.listing-item:first-child').addClass('active');
+              $(this).closest('.hover-listing-image').find('.bl-item:first-child').addClass('active');
+            }
+        );
+
+    });
+}
+
   // Dom Ready
   $(function () {
     headerFixed();
@@ -333,6 +356,7 @@
     retinaLogos();
     preloader();
     goTop();
+    hoverThumbGallery();
     // detectViewport();
     // counter();
   });
