@@ -1,0 +1,40 @@
+.themesflat-pagination{
+    margin-top: 37px;
+    & ul{
+        & li{
+            & .page-numbers {
+                color: #000;
+                font-size: 16px;
+                width: 50px;
+                height: 50px;
+                background-color: transparent;
+                border: solid 1px $shawdow-avata;
+                font-family: $font-btn-family;
+                font-weight: 500;
+                text-align: center;
+                line-height: 50px;
+                border-radius: 50%;
+                margin: 0 7px;
+                display: block;
+                -webkit-transition: all 0.3s ease;
+                -moz-transition: all 0.3s ease;
+                -ms-transition: all 0.3s ease;
+                -o-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                & i{
+                    font-size: 11px;
+                }
+                &:hover{
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+            & .current{
+                background-color: $primary;
+                color: $white;
+            }
+        }
+
+    }
+
+}
