@@ -324,6 +324,29 @@
     });
   };//Counter Number// 
 
+  // var hoverThumbGallery = function (e) {
+  //   e.find('.hover-listing-image').each(function () {
+  //     $(this).find('.listing-item:first-child').addClass('active');
+  //     $(this).find('.bl-item:first-child').addClass('active');
+  //     $(".hover-listing-image .listing-item").hover(
+  //       function () {
+  //         var index = $(this).index();
+  //         $(this).closest('.hover-listing-image').find('.listing-item').removeClass('active');
+  //         $(this).addClass("active");
+  //         $(this).closest('.hover-listing-image').find('.bl-item').removeClass('active');
+  //         $(this).closest('.hover-listing-image').find('.bl-item').eq(index).addClass('active');
+  //       },
+  //       function () {
+  //         $(this).removeClass("active");
+  //         $(this).closest('.hover-listing-image').find('.bl-item').removeClass('active');
+  //         $(this).closest('.hover-listing-image').find('.listing-item:first-child').addClass('active');
+  //         $(this).closest('.hover-listing-image').find('.bl-item:first-child').addClass('active');
+  //       }
+  //     );
+
+  //   });
+  // }
+
   // Dom Ready
   $(function () {
     headerFixed();
@@ -333,6 +356,7 @@
     retinaLogos();
     preloader();
     goTop();
+    hoverThumbGallery();
     // detectViewport();
     // counter();
   });
