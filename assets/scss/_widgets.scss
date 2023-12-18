@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    content: url(/assets/images/logo/logo.png);
+    content: url(./../images/logo/logo.png);
     animation: preload 1.2s linear infinite alternate;
 }
 
@@ -86,7 +86,7 @@
     & .page-title {
         padding: 144px 0;
         border-radius: 15px;
-        background-image: url(/assets/images/page/page-title.jpg);
+        background-image: url(./../images/page/page-title.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -197,7 +197,7 @@
 
 .text-box-blog {
     padding: 38px 38px 33px 38px;
-    background-image: url(/assets/images/blog/quote.jpg);
+    background-image: url(./../images/blog/quote.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
