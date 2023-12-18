@@ -18,21 +18,21 @@
 
  ------------------------------------------------------------------------------ */
 /*--------- Animation ---------- */
-@import "/assets/scss/css/animation.css";
+@import "/assets/css/animation.css";
 /*--------- Nouislider ---------- */
-@import "/assets/scss/css/nouislider.min.css";
+@import "/assets/css/nouislider.min.css";
 /*--------- Abstracts variable ---------- */
-@import "/assets/scss/css/map.min.css";
+@import "/assets/css/map.min.css";
 /*--------- Map ---------- */
-@import "/assets/scss/css/magnific-popup.min.css";
+@import "/assets/css/magnific-popup.min.css";
 /*--------- Magnific-popup ---------- */
-@import "/assets/scss/css/animate.min.css";
+@import "/assets/css/animate.min.css";
 /*--------- Abstracts variable ---------- */
-@import "/assets/scss/css/swiper-bundle.min.css";
+@import "/assets/css/swiper-bundle.min.css";
 /*--------- Abstracts variable ---------- */
 @import "/assets/icon/icomoon/style.css";
 /*--------- Abstracts variable ---------- */
-@import "/assets/scss/css/bootstrap.css";
+@import "/assets/css/bootstrap.css";
 /*--------- Abstracts variable ---------- */
 /*---------- Reset css styles ----------- */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
